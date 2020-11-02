@@ -104,16 +104,22 @@ form {
     font-size: 2vmin;
 }
 
-input {
+.input-div {
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: auto 1fr;
+    position: relative;
+}
+
+input {
+    
     justify-self: stretch;
     height: 15vmin;
     font-size: 6vmin;
     font-weight: 1000;
     border: 2px solid #000;
     border-radius: 5px;
-    
+    text-align: center;
     background-color: #f7bc1b;
     color: #000;
 
@@ -124,14 +130,14 @@ input {
     position: absolute;
     background-color: #2b4c9c;
     background-image: url(https://www.kentekencheck.nl/assets/img/kenteken_eu.png);
-    height: calc(100% -4px);
-    /* top: 2px; */
-    /* left: 2px; */
-    /* width: 10%; */
-    /* background-position: center; */
-    /* background-size: 80% auto; */
-    /* background-repeat: no-repeat; */
-    /* border-radius: 3px 0 0 3px; */
+    height: calc(100% - 4px);
+    top: 2px;
+    left: 2px;
+    width: 10%;
+    background-position: center;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    border-radius: 3px 0 0 3px;
 
 }
 
