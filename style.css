@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.wrapper {
+    
+    margin-top: 10rem;
+    height: 300px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    place-content: center;
+    border-radius: 20px;
+
+    /* place-items: center; */
+}
+
+.header-div {
+    background: linear-gradient(to right, #07a7d3, #018395);
+    display: grid;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+  
+
+}
+
+header  {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+header > h1 {
+    display: grid;
+    align-content: center;
+}
+
+.logo {
+    display: grid;
+    position: absolute;
+    grid-template-rows: repeat(3,auto);
+    place-items: center;
+    border: 3px solid #f7bc1b;
+    color: white;
+    transform: rotate(15deg);
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 160px;
+    width: 160px;
+    background-color: #07a5d0;
+    padding: 20px;
+    border-radius: 50%;
+    right: -20px;
+    top: -70px;
+
+}
+
+.form-wrapper {
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.form-div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+    place-items: center;
+    padding: 20px;
+    border-right: 10px solid #ccc;
+    
+}
+
+ form > label {
+    background-color: #e52520;
+    color: #fff;
+    justify-self: start;
+    padding: 5px;
+    font-size: 2vmin;
+}
+
+input {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-self: stretch;
+    height: 15vmin;
+    font-size: 6vmin;
+    font-weight: 1000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    
+    background-color: #f7bc1b;
+    color: #000;
+
+}
+
+.input-div:before {
+    content: " ";
+    position: absolute;
+    background-color: #2b4c9c;
+    background-image: url(https://www.kentekencheck.nl/assets/img/kenteken_eu.png);
+    height: calc(100% -4px);
+    /* top: 2px; */
+    /* left: 2px; */
+    /* width: 10%; */
+    /* background-position: center; */
+    /* background-size: 80% auto; */
+    /* background-repeat: no-repeat; */
+    /* border-radius: 3px 0 0 3px; */
+
+}
+
+
+
+
+
+
+
+.form-div > button {
+    height: 10vmin;
+    justify-self: center;
+    min-width: 100px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    min-height: 3rem;
+    min-width: 10rem;
+    font-size: 5vmin;
+    padding: 10px;
+}
+
+.form-div > button:hover {
+    background-color: green;
+    transition: ease-in-out;
+}
+
+.list-div > ul {
+    display: grid;
+    align-content: stretch;
+}
+
+.list-div > ul > li {
+    padding: 10px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto 1fr;
+    align-content: stretch;
+    font-weight: 400;
+
+}
+
+.check {
+    color: green;
+    /* background-color: green; */
+}
+
+.check-one, check-two{
+  justify-self: center;
+  padding: 10px;
+}
+
+.check-two {
+    justify-self: center;
+    font-size: 1rem;
+}
+
+
+
+
